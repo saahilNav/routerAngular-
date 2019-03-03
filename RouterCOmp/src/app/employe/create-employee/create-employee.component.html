@@ -1,0 +1,17 @@
+<p>
+
+    welcome to create website  Page</p>
+
+
+<div *ngIf="item" style="padding-left:20px;margin-top: 10px">
+<div style="width:50%"><img src={{item.NewsPic}} width='40%' class="img"  alt="this pic is not exit"> </div>
+<p style="display:inline-block; margin-top: 4%">Summary: <span style="margin-left: 10px">{{item.Summary}}</span><p>
+  <p> Date: <span style="margin-left: 10px">{{item.date}}</span></p>
+    <p>Editor:<span style="margin-left: 10px"> {{item.Editor}}</span></p>
+    <p>Tittle:{{item.Title}}</p>
+    <p style="width:50%;">Description::<span style="margin-left: 10px">{{item.Description}}</span></p> 
+    <button (click)="details(item)">Description</button>
+</div>
+
+
+<button style="margin-left:10px" type="button" (click)="goBack()"class="btn btn-danger"> Back</button>

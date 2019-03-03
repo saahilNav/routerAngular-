@@ -1,0 +1,14 @@
+
+
+<ul class="div1" style="list-style-type: none;margin-top: 20px;margin-left:-37px;margin-right: 34px;">
+  <li *ngFor="let obj of value"  style="margin-left:10px" >
+   <img src={{obj.NewsPic}}  width='100%' class="img"  alt="this pic is not exit"> 
+  
+  <a  [routerLink]="['/create',obj.id]"><p class="p1"> {{obj.Summary}} {{obj.Editor}}</p></a>
+</li>
+  </ul>
+
+ 
+
+
+  
